@@ -3,7 +3,7 @@
 
 .event-list {
   width: 33%;
-  height: 100vh;
+  min-height: 100vh;
   float: left;
   background-color: $dark-shade;
 
@@ -16,8 +16,7 @@
   }
 
   ul {
-  @include pm-clear;
-  display: block;
+    @include pm-clear;
 
     .event-list--list-item {
       cursor: pointer;
@@ -26,9 +25,14 @@
       display: block;
       text-overflow: ellipsis;
       padding: $spacing-reg;
+      overflow-y: scroll;
 
       &:hover {
         background-color: $dark-shade;
+      }
+
+      &:last-of-type {
+        margin-bottom: $spacing-xl;
       }
     }
   }
