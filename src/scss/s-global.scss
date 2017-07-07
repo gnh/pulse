@@ -1,0 +1,7 @@
+@import 's-variables';
+
+body {
+  @include pm-clear;
+  background-color: $dark;
+}
+

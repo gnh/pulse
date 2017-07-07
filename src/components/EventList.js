@@ -7,6 +7,7 @@ const Arrow = ({ isUp }) => {
 }
 
 const EventSummary = ({
+  key = 'kgg',
   type = 'type',
   actor = 'actor',
   object = 'object',
@@ -15,11 +16,11 @@ const EventSummary = ({
   average = 0,
   previousCount = 0,
 }) => (
-  <li> {actor} {type} {object}, target={target} | {count} | <Arrow isUp={count > previousCount}></Arrow> (avg = {average})</li>
+  <li key={key} className="event-list--list-item"> {actor} {type} {object}, target={target} | {count} | <Arrow isUp={count > previousCount}></Arrow> (avg = {average})</li>
  )
 
 const EventList = ({ data = [{}] }) => (
-  <ul>{
+  <ul className="event-list">{
     data.map(event => <EventSummary event={event} ></EventSummary>)
   }</ul>
 );

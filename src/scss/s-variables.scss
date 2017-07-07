@@ -5,6 +5,16 @@ $dark:                       #333F4A;
 $white:                      #ffffff;
 
 
+// spacing
+
+$spacing-value:              10px;
+
+$spacing-sm:                 $spacing-value;
+$spacing-reg:                2 * $spacing-value;
+$spacing-lg:                 4 * $spacing-value;
+$spacing-xl:                 8 * $spacing-value;
+
+
 // typography
 
 $primary-font:               -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -21,3 +31,11 @@ $fs-lg:                      18px;
 $fs-xl:                      24px;
 $fs-xxl:                     32px;
 $fs-xxxl:                    48px;
+
+
+// mixins
+
+@mixin pm-clear {
+  margin: 0;
+  padding: 0;
+}
