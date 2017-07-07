@@ -2,8 +2,8 @@ import React from 'react';
 import sanitise from '../utils/sanitise';
 
 const Arrow = ({ isUp }) => {
-  if (isUp) return (<span style={{ color: 'green' }}>▲</span>)
-  else return (<span style={{ color: 'red' }}>▼</span>)
+  if (isUp) return (<span style={{ color: '#50B871' }}>▲</span>)
+  else return (<span style={{ color: '#F47988' }}>▼</span>)
 }
 
 const EventSummary = ({ event }) => {

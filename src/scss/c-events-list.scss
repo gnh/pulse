@@ -29,7 +29,7 @@
     @include pm-clear;
 
     .event-list--list-item {
-      @include transition($transition-sm);
+      // @include transition($transition-sm);
       cursor: pointer;
       color: $white;
       width: 100%;
