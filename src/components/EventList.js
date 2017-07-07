@@ -6,23 +6,21 @@ const Arrow = ({ isUp }) => {
   else return (<span style={{ color: 'red' }}>▼</span>)
 }
 
-const EventSummary = ({
-  key = 'kgg',
-  type = 'type',
-  actor = 'actor',
-  object = 'object',
-  target = 'target',
-  count = 0,
-  average = 0,
-  previousCount = 0,
-}) => (
-  <li key={key} className="event-list--list-item"> {actor} {type} {object}, target={target} | {count} | <Arrow isUp={count > previousCount}></Arrow> (avg = {average})</li>
- )
+const EventSummary = ({ event }) => {
+
+ const { type, actor, object, target, count, avg, previousCount } = event;
+  return (
+    <li key={[type,actor,object,target].join()} className="event-list--list-item"> {actor} {type} {object}{target ? ' to ' + target: ''} | {count} | <Arrow isUp={count > previousCount}></Arrow> (avg = {avg})</li>
+  )
+}
 
 const EventList = ({ data = [{}] }) => (
-  <ul className="event-list">{
-    data.map(event => <EventSummary event={event} ></EventSummary>)
-  }</ul>
+  <aside className="event-list">
+    <div className="logo-bar"><h4>pulse</h4></div>
+    <ul>
+      {data.map(event => <EventSummary event={event} ></EventSummary>)}
+    </ul>
+  </aside>
 );
 
 export default EventList;

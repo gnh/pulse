@@ -8,36 +8,42 @@ p, a, li {
 }
 
 h1 {
+  @include pm-clear;
   @extend p;
   font-size: $fs-xxxl;
   font-weight: $fw-light;
 }
 
 h2 {
+  @include pm-clear;
   @extend p;
   font-size: $fs-xxl;
   font-weight: $fw-light;
 }
 
 h3 {
+  @include pm-clear;
   @extend p;
   font-size: $fs-xl;
   font-weight: $fw-bold;
 }
 
 h4 {
+  @include pm-clear;
   @extend p;
   font-size: $fs-lg;
-  font-weight: $fw-bold;
+  font-weight: $fw-light;
 }
 
 h5 {
+  @include pm-clear;
   @extend p;
   font-size: $fs-reg;
   font-weight: $fw-bold;
 }
 
 h6{
+  @include pm-clear;
   @extend p;
   font-size: $fs-sm;
   font-weight: $fw-bold;

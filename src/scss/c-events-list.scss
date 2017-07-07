@@ -2,23 +2,34 @@
 
 
 .event-list {
-  @include pm-clear;
-  display: block;
-  background-color: rgba(0,0,0,0.1);
   width: 33%;
   height: 100vh;
   float: left;
+  background-color: $dark-shade;
 
-  .event-list--list-item {
-    cursor: pointer;
+  .logo-bar {
+    padding: $spacing-reg;
+    background-color: $dark-shade;
     color: $white;
     width: 100%;
     display: block;
-    text-overflow: ellipsis;
-    padding: $spacing-reg;
+  }
 
-    &:hover {
-      background-color: rgba(0,0,0,0.1);
+  ul {
+  @include pm-clear;
+  display: block;
+
+    .event-list--list-item {
+      cursor: pointer;
+      color: $white;
+      width: 100%;
+      display: block;
+      text-overflow: ellipsis;
+      padding: $spacing-reg;
+
+      &:hover {
+        background-color: $dark-shade;
+      }
     }
   }
 }
