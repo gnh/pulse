@@ -34,9 +34,27 @@ $fs-xxl:                     32px;
 $fs-xxxl:                    48px;
 
 
+// transitions
+
+$transition-value:           0.1s;
+
+$transition-sm:              $transition-value;
+$transition-med:             2 * $transition-value;
+$transition-lg:              3 * $transition-value;
+
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 // mixins
 
 @mixin pm-clear {
   margin: 0;
   padding: 0;
+}
+
+@mixin transition($duration) {
+    -webkit-transition: all $duration cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all $duration cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all $duration cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all $duration cubic-bezier(0.4, 0, 0.2, 1);
 }

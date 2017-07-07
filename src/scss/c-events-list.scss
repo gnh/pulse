@@ -15,10 +15,21 @@
     display: block;
   }
 
+  .filter-events {
+    width: 100%;
+    display: block;
+    padding: $spacing-reg;
+    color: $white;
+    appearance: none;
+    border: none;
+    background-color: $dark-shade;
+  }
+
   ul {
     @include pm-clear;
 
     .event-list--list-item {
+      @include transition($transition-sm);
       cursor: pointer;
       color: $white;
       width: 100%;
