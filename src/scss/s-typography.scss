@@ -11,14 +11,15 @@ h1 {
   @include pm-clear;
   @extend p;
   font-size: $fs-xxxl;
-  font-weight: $fw-light;
+  font-weight: $fw-bold;
 }
 
 h2 {
   @include pm-clear;
   @extend p;
+  // text-transform: uppercase;
   font-size: $fs-xxl;
-  font-weight: $fw-light;
+  font-weight: $fw-bold;
 }
 
 h3 {
@@ -31,8 +32,11 @@ h3 {
 h4 {
   @include pm-clear;
   @extend p;
-  font-size: $fs-lg;
-  font-weight: $fw-light;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: $fs-sm;
+  font-weight: $fw-bold;
+  color: $grey;
 }
 
 h5 {

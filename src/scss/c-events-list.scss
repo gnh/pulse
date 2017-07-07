@@ -2,10 +2,12 @@
 
 
 .event-list {
+  position: fixed;
   width: 440px;
-  min-height: 100vh;
+  height: 100vh;
   float: left;
   background-color: $dark-shade;
+  overflow-y: scroll;
 
   .logo-bar {
     padding: $spacing-reg;

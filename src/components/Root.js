@@ -1,5 +1,6 @@
 import React from 'react';
 import EventList from './EventList';
+import EventDetails from './EventDetails';
 
 const data = [ { type: 'added',
     actor: 'user',
@@ -39,5 +40,6 @@ const data = [ { type: 'added',
 export default () => (
   <div>
     <EventList data={data}></EventList>
+    <EventDetails></EventDetails>
   </div>
 );

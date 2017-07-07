@@ -1,0 +1,39 @@
+@import 's-variables';
+
+
+.event-details {
+  display: block;
+  float: left;
+  width: calc(100% - 440px);
+  padding: $spacing-lg;
+  margin-left: 440px;
+
+  .event-name {
+    margin-bottom: $spacing-reg;
+  }
+
+  .chart {
+    margin-bottom: $spacing-lg;
+  }
+  
+  .specific-event-list {
+    @include pm-clear;
+
+    .list-title {
+      margin-bottom: $spacing-reg;
+    }
+
+    .specific-event-list--list-item {
+      @include pm-clear;
+      padding: $spacing-reg;
+      border-bottom: 1px solid $white-shade;
+      list-style: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $dark-shade;
+      }
+    }
+  }
+
+}
