@@ -1,0 +1,47 @@
+@import 'variables';
+
+p, a {
+  font-family: $primary-font;
+  color: $white;
+  font-weight: $fw-reg;
+  font-size: $fs-reg;
+}
+
+h1 {
+  @extend p;
+  font-size: $fs-xxxl;
+  font-weight: $fw-light;
+}
+
+h2 {
+  @extend p;
+  font-size: $fs-xxl;
+  font-weight: $fw-light;
+}
+
+h3 {
+  @extend p;
+  font-size: $fs-xl;
+  font-weight: $fw-bold;
+}
+
+h4 {
+  @extend p;
+  font-size: $fs-lg;
+  font-weight: $fw-bold;
+}
+
+h5 {
+  @extend p;
+  font-size: $fs-reg;
+  font-weight: $fw-bold;
+}
+
+h6{
+  @extend p;
+  font-size: $fs-sm;
+  font-weight: $fw-bold;
+}
+
+
+
