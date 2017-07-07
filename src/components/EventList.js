@@ -16,7 +16,7 @@ const EventSummary = ({ event }) => {
 
 const EventList = ({ data = [{}] }) => (
   <aside className="event-list">
-    <div className="logo-bar"><h4>pulse</h4></div>
+    <div className="logo-bar"><img src="../assets/images/logo.svg"></img></div>
     <ul>
       {data.map(event => <EventSummary event={event} ></EventSummary>)}
     </ul>
