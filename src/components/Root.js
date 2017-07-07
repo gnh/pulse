@@ -1,9 +1,9 @@
 import React from 'react';
-import Greeting from './Greeting';
-import SocialIcon from './SocialIcon';
+import EventList from './EventList';
 
 export default () => (
   <div>
     <h1>App</h1>
+    <EventList></EventList>
   </div>
 );
