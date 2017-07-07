@@ -15,13 +15,14 @@
   .chart {
     margin-bottom: $spacing-lg;
   }
+
+  .list-title {
+    margin-bottom: $spacing-reg;
+  }
   
   .specific-event-list {
     @include pm-clear;
-
-    .list-title {
-      margin-bottom: $spacing-reg;
-    }
+    border: 1px solid $white-shade;
 
     .specific-event-list--list-item {
       @include pm-clear;

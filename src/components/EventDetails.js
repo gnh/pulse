@@ -51,8 +51,8 @@ const EventDetails = ({ data = [{}] }) => (
     <div  className="chart">
       <ChartComponent></ChartComponent>
     </div>
+    <h4 className="list-title">List of events</h4>
     <ul className="specific-event-list">
-      <h4 className="list-title">List of events</h4>
       <li className="specific-event-list--list-item">Grant Harris | me@grantharr.is | ID-98SJ2290AS</li>
       <li className="specific-event-list--list-item">Grant Harris | me@grantharr.is | ID-98SJ2290AS</li>
       <li className="specific-event-list--list-item">Grant Harris | me@grantharr.is | ID-98SJ2290AS</li>
